@@ -1,1 +1,104 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1 to 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        div {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Завдань: </h1>
+    <!-- 1. Запитати у користувача число Вивести це число в ступені 3 -->
+    <div>
+        <h2>1. Запитати у користувача число Вивести це число в ступені 3</h2>
+        <label for="numberInput">Число:</label>
+        <input type="number" id="numberInput" placeholder="Введіть число">
+        <button onclick="calculatePower()">Обчислити</button>
+        <p id="powerResult"></p>
+    </div>
+    <!-- 2. Запитати у користувача 3 числа, вивести середнє арифметичне та сумму цих чисел -->
+    <div>
+        <h2>2. Запитати у користувача 3 числа, вивести середнє арифметичне та сумму цих чисел</h2>
+        <label for="num1">Перше число:</label>
+        <input type="number" id="num1" placeholder="Перше число">
+        <label for="num2">Друге число:</label>
+        <input type="number" id="num2" placeholder="Друге число">
+        <label for="num3">Третє число:</label>
+        <input type="number" id="num3" placeholder="Третє число">
+        <button onclick="calculateSumAndAverage()">Обчислити</button>
+        <p id="sumAndAverageResult"></p>
+    </div>
+    <!-- 3. Реалізувати конвертер кілометрів в милі. Користувач вводить в кілометрах, виводимо в милях. -->
+    <div>
+        <h2>3. Реалізувати конвертер кілометрів в милі</h2>
+        <label for="kilometersInput">Кілометри:</label>
+        <input type="number" id="kilometersInput" placeholder="Введіть кілометри">
+        <button onclick="convertToMiles()">Конвертувати</button>
+        <p id="milesResult"></p>
+    </div>
+    <!-- 4. Запитайте у користувача поточний час (часи та хвилини) -->
+    <div>
+        <h2>4. Запитати у користувача поточний час (часи та хвилини)</h2>
+        <label for="hoursInput">Часи:</label>
+        <input type="number" id="hoursInput" placeholder="Введіть часи" min="0" max="23">
+        <label for="minutesInput">Хвилини:</label>
+        <input type="number" id="minutesInput" placeholder="Введіть хвилини" min="0" max="59">
+        <button onclick="calculateRemainingTime()">Обчислити</button>
+        <p id="remainingTimeResult"></p>
+    </div>
+    <!-- 5. Запитайте у користувача трьохзначне число, виведіть другу цифру числа -->
+    <div>
+        <h2>5. Запитати у користувача трьохзначне число, виведіть другу цифру числа</h2>
+        <label for="threeDigitNumberInput">Трьохзначне число:</label>
+        <input type="number" id="threeDigitNumberInput" placeholder="Введіть трьохзначне число">
+        <button onclick="calculateSecondDigit()">Обчислити</button>
+        <p id="secondDigitResult"></p>
+    </div>
+    <!-- 6. Запитайте у користувача п'ятизначне числа. Перемістить останню цифру в початок. Виведіть результат. -->
+    <div>
+        <h2>6. Запитати у користувача п'ятизначне число. Перемістить останню цифру в початок. Виведіть результат.</h2>
+        <label for="fiveDigitNumberInput">П'ятизначне число:</label>
+        <input type="number" id="fiveDigitNumberInput" placeholder="Введіть п'ятизначне число">
+        <button onclick="shiftLastDigit()">Перемістити</button>
+        <p id="shiftedNumberResult"></p>
+    </div>
+    <!-- 7. Напишіть калькулятор. Користувач вводить перше число, потім операцію (+-/*) потім друге число -->
+    <div>
+        <h2>7. Напишіть калькулятор. Користувач вводить перше число, потім операцію (+-/*) потім друге число</h2>
+        <label for="firstNumberInput">Перше число:</label>
+        <input type="number" id="firstNumberInput" placeholder="Введіть перше число">
+        <label for="operatorInput">Операція:</label>
+        <input type="text" id="operatorInput" placeholder="Введіть операцію">
+        <label for="secondNumberInput">Друге число:</label>
+        <input type="number" id="secondNumberInput" placeholder="Введіть друге число">
+        <button onclick="calculateResult()">Обчислити</button>
+        <p id="result"></p>
+    </div>
+    <!-- 8. Зарплатня співробітника складає ставка + 10% від продажів. Запитайте ставку та суму продажів. -->
+    <div>
+        <h2>8. Зарплатня співробітника складає ставка + 10% від продажів. Запитайте ставку та суму продажів.</h2>
+        <label for="rateInput">Ставка:</label>
+        <input type="number" id="rateInput" placeholder="Введіть ставку">
+        <label for="salesInput">Продажі:</label>
+        <input type="number" id="salesInput" placeholder="Введіть продажі">
+        <button onclick="calculateSalary()">Обчислити</button>
+        <p id="salaryResult"></p>
+    </div>
+</body>
+</html>
